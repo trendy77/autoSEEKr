@@ -8,18 +8,17 @@
     url('../fonts/bf.ttf') format('truetype'), /* Safari, Android, iOS */
     url('../fonts/bf.svg#svgbf') format('svg');
 }
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6 {
     font-family: tinyHands;
 }
-h4, h5, h6 {
-	font-family: 'Montserrat';
-}
-body{
-	background: #262626;
-    color:#fff;
-    margin:0;
-}
+.panelContainer {
+    margin-left: 20%;
+    background:#353535;
+    padding: 0 10px;
+    text-align:center;
+    padding:20px;
 
+}
 .row {
     width:100%;
     margin-top:50px;
@@ -28,6 +27,40 @@ body{
     display: grid;
     grid-template-columns: 35% auto 35%;
     align-items: center;
+}
+
+button {
+    background:#FF0057;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    padding:10px;
+    margin-right: 30px;
+    cursor:pointer;
+}
+
+html, body {
+    font-family: tinyHands, 'Montserrat',sans;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+ background-color: #F4F7F8;
+ }
+p {
+  margin: 1em 2em;
+}
+
+#content {
+  height: 90%;
+  margin: 2em 2em 0 2em;
+  border: .5em solid #DDE4E9;
+  transition: background-color .2s ease-out;
+}
+
+#content[contenteditable=true] {
+  background-color: white;
+  transition: background-color .2s ease-in;
 }
 
 .loadspin, #overlay {
@@ -43,37 +76,4 @@ body{
     z-index: 2;    /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer;
 
-}
-
-#price-container {
-    margin-left: 20%;
-    background:#353535;
-    padding: 0 10px;
-    text-align:center;
-}
-#goal-container {
-    padding:20px;
-}
-.subtext {
-    font-size:.8em;
-    text-transform:uppercase;
-    margin-bottom: 10px;
-}
-img {
-    width: 20px;
-}
-
-h1 {
-    margin: 0 0 10px 0;
-}
-
-button {
-    float:right;
-    background:#FF0057;
-    border:none;
-    color:#fff;
-    text-transform:uppercase;
-    padding:10px;
-    margin-right: 30px;
-    cursor:pointer;
 }
